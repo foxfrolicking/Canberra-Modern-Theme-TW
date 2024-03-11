@@ -1,0 +1,30 @@
+{# TEMPLATE: archive-buildings.twig #}
+
+{% extends "index.twig" %}
+
+{% block content %}
+
+	{# loop through the posts returned #}
+	{% for post in posts %}
+		{# include the content from the first file here, if it can't find it, load the other #}
+		{% include ['tease-buildings.twig', 'tease.twig'] %}
+	{% endfor %}
+
+	{# now load the page numbers #}
+	{% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
+
+
+	<div
+		class="debug p-8 bg-debug ">
+		{# useful for debugging, delete later #}
+		<h1>Debug info</h1>
+
+		<p class="pb-4">post name:
+			{{post.name}}</p>
+
+		<p>file name: archive-buildings.twig</p>
+
+		{# Output what is in the post #}
+		{# {{dump(post)}} #}
+	</div>
+{% endblock %}
