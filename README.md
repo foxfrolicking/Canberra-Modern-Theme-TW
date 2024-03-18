@@ -9,9 +9,10 @@ This version has been set up to use TailwindCSS.
 
 1. First install Wordpress with Local following the instructions on Canvas
 2. Make sure your Wordpress site is running!
-3. Pull the lastest code from GitHub, via GitHub desktop or VSCode
-4. In your terminal, navigate to the theme folder (if you've set VSCode up properly you should be in the root theme folder), then type `npm run watch`. If this doesn't work, you may need to install Node, details below.
-5. Start writing code!
+3. Pull the lastest code from GitHub, via GitHub desktop or VSCode. *Sas says - Clone to (grab link from repo, and paste into) C:\Users\saski\Local Sites\canberra-modern\app\public\wp-content\themes - NOTE change disk location to your location!) *
+4. In your terminal, navigate to the theme folder (if you've set VSCode up properly you should be in the root theme folder), then type `npm run watch`. If this doesn't work, you may need to install Node, details below. If this errors google the error to fix.
+5. Make sure you watch the [3.4 Project Setup tutorial which shows how to activate our GitHub Repo version of the Theme in WordPress local thingy](https://unicanberra.instructure.com/courses/15404/pages/3-dot-4-project-setup?module_item_id=1214627) Which means we can start editing.
+6. test this works by opening templates folder, open a twig file, e.g. footer.twig, edit > save > open local browser version and see change.
 
 
 ## Install Node
