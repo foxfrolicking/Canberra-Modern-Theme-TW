@@ -14,9 +14,9 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: '#3490dc', // Add your custom primary color
-				secondary: '#6574cd', // Add your custom secondary color
-				debug: '#FFCA28', // Just so you can see how this is powerful
+				primary: '#181A22', // Add your custom primary color  !important; 
+				secondary: '#2B2D35', // Add your custom secondary color  !important; 
+				debug: '#181A22', // Just so you can see how this is powerful  !important; 
 				// Add more custom colors as needed
 			},
 			fontFamily: {
