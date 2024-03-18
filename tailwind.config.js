@@ -3,6 +3,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
+	darkMode: 'media',
 	content: [
 		'./templates/*.html',
 		'./templates/*.twig',
