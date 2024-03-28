@@ -3,7 +3,8 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-	/**darkMode: 'media',**/
+	
+	
 	content: [
 		'./templates/*.html',
 		'./templates/*.twig',
@@ -17,7 +18,11 @@ module.exports = {
 				primary: '#181A22', // Add your custom primary color 
 				secondary: '#2B2D35', // Add your custom secondary color  
 				debug: '#181A22', // Just so you can see how this is powerful  
-				// Add more custom colors as needed
+				'black': '#09090b',
+				'slate': '#e2e8f0',
+				'grape': '#833ab4',
+				'cherry': '#fd1d52',
+				'yellow': 'fcb045',
 			},
 			fontFamily: {
 				//font files are declared in html-header.twig file

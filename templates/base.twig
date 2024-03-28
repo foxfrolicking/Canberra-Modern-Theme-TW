@@ -2,11 +2,13 @@
 
 	{% include 'html-header.twig' %}
 	{% block head %}{% endblock %}
-</head>{% endblock %}<body class="bg-black {{body_class}}" data-template="base.twig">
-hello
+
+</head>{% endblock %}<body class=" body_class " data-template="base.twig">
+
+  </div>
 {{ function('wp_body_open') }}
 <a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
-<header class="header">
+<header class="header text-slate " >
 	{% block header %}
 		<div class="wrapper">
 			<h1 class="hdr-logo" role="banner">
@@ -20,7 +22,7 @@ hello
 	{% endblock %}
 </header>
 
-<section id="content" role="main" class="content-wrapper">
+<section id="content" role="main" class="content-wrapper text-slate" >
 	{% if title %}
 		<!-- this title comes from the base.twig file -->
 		<h1>{{title}}</h1>
@@ -38,7 +40,7 @@ hello
 </section>
 
 {% block footer %}
-	<footer id="footer">
+	<footer id="footer" class="bg-black">
 		{% include 'footer.twig' %}
 	</footer>
 	{{ function('wp_footer') }}
