@@ -3,7 +3,7 @@
 	{% include 'html-header.twig' %}
 	{% block head %}{% endblock %}
 
-</head>{% endblock %}<body class="body_class bg-black" data-template="base.twig">
+</head>{% endblock %}<body class="body_class" data-template="base.twig">
 
   </div>
 {{ function('wp_body_open') }}
@@ -12,7 +12,7 @@
 	{% block header %}
 		<div class="wrapper">
 			<h1 class="hdr-logo" role="banner">
-				<a class="hdr-logo-link" href="{{site.url}}" rel="home">{{site.name}}</a>
+				<a href="#">CM</a>
 			</h1>
 			<nav id="nav-main" class="nav-main  py-8" role="navigation">
 				{% include "menu.twig" with {'items': menu.get_items} %}
@@ -40,7 +40,7 @@
 </section>
 
 {% block footer %}
-	<footer id="footer" >
+	<footer id="footer" class="bg-black">
 		{% include 'footer.twig' %}
 	</footer>
 	{{ function('wp_footer') }}
