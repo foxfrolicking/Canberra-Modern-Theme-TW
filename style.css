@@ -542,6 +542,9 @@ video {
 .block {
   display: block;
 }
+.inline-block {
+  display: inline-block;
+}
 .resize {
   resize: both;
 }
@@ -552,6 +555,13 @@ video {
 .bg-debug {
   --tw-bg-opacity: 1;
   background-color: rgb(24 26 34 / var(--tw-bg-opacity));
+}
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 .p-8 {
   padding: 2rem;
@@ -566,4 +576,7 @@ video {
 .text-slate {
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+.text-transparent {
+  color: transparent;
 }
