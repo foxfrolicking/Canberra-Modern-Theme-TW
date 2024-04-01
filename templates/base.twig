@@ -3,7 +3,7 @@
 	{% include 'html-header.twig' %}
 	{% block head %}{% endblock %}
 
-</head>{% endblock %}<body class=" body_class " data-template="base.twig">
+</head>{% endblock %}<body class="body_class bg-black" data-template="base.twig">
 
   </div>
 {{ function('wp_body_open') }}
@@ -40,7 +40,7 @@
 </section>
 
 {% block footer %}
-	<footer id="footer" class="bg-black">
+	<footer id="footer" >
 		{% include 'footer.twig' %}
 	</footer>
 	{{ function('wp_footer') }}

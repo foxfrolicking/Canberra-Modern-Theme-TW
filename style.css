@@ -542,15 +542,16 @@ video {
 .block {
   display: block;
 }
-.inline-block {
-  display: inline-block;
-}
 .resize {
   resize: both;
 }
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 9 11 / var(--tw-bg-opacity));
+}
 .bg-debug {
   --tw-bg-opacity: 1;
-  background-color: rgb(43 45 53 / var(--tw-bg-opacity));
+  background-color: rgb(24 26 34 / var(--tw-bg-opacity));
 }
 .p-8 {
   padding: 2rem;
@@ -561,9 +562,6 @@ video {
 }
 .pb-4 {
   padding-bottom: 1rem;
-}
-.text-transparent {
-  color: transparent;
 }
 .text-slate {
   --tw-text-opacity: 1;
