@@ -28,7 +28,7 @@ module.exports = {
 			},
 			fontFamily: {
 				//font files are declared in html-header.twig file
-				'sans': ['"Inria Sans"', 'sans-serif'],
+				'sans': ['"Titillium Web"','"Inria Sans"', 'sans-serif'],
 			},
 		}
 	},
