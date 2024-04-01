@@ -15,6 +15,7 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
+				transparent: 'transparent',
 				primary: '#181A22', // Add your custom primary color 
 				secondary: '#2B2D35', // Add your custom secondary color  
 				debug: '#181A22', // Just so you can see how this is powerful  
@@ -23,6 +24,7 @@ module.exports = {
 				'grape': '#833ab4',
 				'cherry': '#fd1d52',
 				'yellow': 'fcb045',
+				
 			},
 			fontFamily: {
 				//font files are declared in html-header.twig file
