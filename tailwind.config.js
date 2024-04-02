@@ -23,7 +23,7 @@ module.exports = {
 				'slate': '#e2e8f0',
 				'grape': '#833ab4',
 				'cherry': '#fd1d52',
-				'yellow': 'fcb045',
+				
 				
 			},
 			fontFamily: {
