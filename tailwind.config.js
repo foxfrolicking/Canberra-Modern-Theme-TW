@@ -28,8 +28,8 @@ module.exports = {
 			},
 			fontFamily: {
 				//font files are declared in html-header.twig file
-				'sans': ['"Titillium Web"', '"Orbitron"', '"Inria Sans"', 'sans-serif'],
-				
+				'sans': ['"Titillium Web"', '"Inria Sans"', 'sans-serif'],
+				'logo':['"Orbitron"']
 			},
 		}
 	},
