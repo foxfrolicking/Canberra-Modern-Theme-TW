@@ -47,7 +47,7 @@ html,
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: "Titillium Web", "Orbitron", "Inria Sans", sans-serif; /* 4 */
+  font-family: "Titillium Web", "Inria Sans", sans-serif; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
   -webkit-tap-highlight-color: transparent; /* 7 */
@@ -545,8 +545,30 @@ video {
 .inline-block {
   display: inline-block;
 }
+.grid {
+  display: grid;
+}
 .resize {
   resize: both;
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.gap-4 {
+  gap: 1rem;
+}
+.rounded-2xl {
+  border-radius: 1rem;
+}
+.border-2 {
+  border-width: 2px;
+}
+.border-solid {
+  border-style: solid;
+}
+.border-sky-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(14 165 233 / var(--tw-border-opacity));
 }
 .bg-black {
   --tw-bg-opacity: 1;
@@ -575,6 +597,9 @@ video {
   -webkit-background-clip: text;
           background-clip: text;
 }
+.p-5 {
+  padding: 1.25rem;
+}
 .p-8 {
   padding: 2rem;
 }
@@ -585,8 +610,15 @@ video {
 .pb-4 {
   padding-bottom: 1rem;
 }
+.font-\[\'Orbitron\'\] {
+  font-family: 'Orbitron';
+}
 .font-sans {
-  font-family: "Titillium Web", "Orbitron", "Inria Sans", sans-serif;
+  font-family: "Titillium Web", "Inria Sans", sans-serif;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .text-9xl {
   font-size: 8rem;
