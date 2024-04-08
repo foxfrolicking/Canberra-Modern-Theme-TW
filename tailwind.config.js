@@ -11,6 +11,7 @@ module.exports = {
 		'./templates/partial/*.twig',
 		'./templates/blocks/*.twig',
 		// Add paths to your Twig templates or any files using Tailwind classes
+		
 	],
 	theme: {
 		extend: {
