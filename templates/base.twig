@@ -14,9 +14,9 @@
 			<h1 class="hdr-logo font-logo font-extrabold text-9xl" role="banner">
 				<a href="#">CM</a>
 			</h1>
-		    <nav id="nav-main" class="nav-main py-8" role="navigation" style="display: flex; justify-content: center;">
-    {% include "menu.twig" with {'items': menu.get_items} %}
-</nav>
+			<nav id="nav-main" class="nav-main  py-8" role="navigation">
+				{% include "menu.twig" with {'items': menu.get_items} %}
+			</nav>
 			<!-- #nav -->
 		</div>
 	{% endblock %}
