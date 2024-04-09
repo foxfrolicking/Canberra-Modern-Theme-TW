@@ -22,6 +22,7 @@ module.exports = {
 				debug: '#181A22', // Just so you can see how this is powerful  
 				'black': '#09090b',
 				'slate': '#e2e8f0',
+				'darkslate': '#1e293b',
 				'grape': '#833ab4',
 				'cherry': '#fd1d52',
 				
