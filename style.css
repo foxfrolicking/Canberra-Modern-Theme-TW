@@ -548,9 +548,6 @@ video {
 .m-5 {
   margin: 1.25rem;
 }
-.mb-8 {
-  margin-bottom: 2rem;
-}
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -637,6 +634,10 @@ video {
 .p-8 {
   padding: 2rem;
 }
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -684,7 +685,10 @@ video {
   color: transparent;
 }
 
-
+.buildings p {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+}
 
 .wp-block-image img {
     width: 20%;
@@ -715,6 +719,11 @@ video {
 
   .md\:justify-end {
     justify-content: flex-end;
+  }
+
+  .md\:px-96 {
+    padding-left: 24rem;
+    padding-right: 24rem;
   }
 }
 @media (min-width: 1024px) {
