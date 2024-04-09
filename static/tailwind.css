@@ -11,12 +11,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.article-body h4 {
-    color: red;;
-}
-.article-body p {
-    color: #99cc00;
-}
+
 
 .wp-block-image img {
     width: 20%;
