@@ -11,3 +11,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.wp-block-image img {
+    width: 20%;
+}
+.hero {
+    background: url(https://img1.wsimg.com/isteam/ip/713b0fb1-3749-4859-97e2-b7cf5cfb344b/fddd9995-170d-4cce-a82a-e7057a668372.png/:/cr=t:0%25,l:0%25,w:87.33%25,h:100%25/rs=w:730,h:730,cg:true) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
