@@ -20,8 +20,8 @@ module.exports = {
 				primary: '#181A22', // Add your custom primary color 
 				secondary: '#2B2D35', // Add your custom secondary color  
 				debug: '#181A22', // Just so you can see how this is powerful  
-				'black': '#09090b',
-				'slate': '#e2e8f0',
+				'black': '#181A22',
+				'slate': '#2B2D35',
 				'grape': '#833ab4',
 				'cherry': '#fd1d52',
 				
