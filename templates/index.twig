@@ -8,12 +8,12 @@
 
 	{% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
 
-	<div
+	<div 
 		class="debug p-8 bg-debug">
 		{# useful for debugging, delete later #}
 		<h1>Debug info</h1>
 
-		<p class="pb-4">post name:
+		<p class="text-gradient-to-r from-3de2ff to-fe97df to-ffcb3d">>post name:
 			{{post.name}}</p>
 
 		<p>file name: index.twig</p>
