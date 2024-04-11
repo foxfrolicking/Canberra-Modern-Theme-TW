@@ -3,7 +3,7 @@
 {% extends "index.twig" %}
 
 {% block content %}
-	<ul class="grid p-10 gap-10 grid-cols-2 gap-20 md:grid-cols-3 lg:grid-cols-4">
+	<ul class="grid p-5 gap-10 grid-cols-1 gap-15 md:grid-cols-3 lg:grid-cols-4 lg:p-10">
 		{% for post in posts %}
 			{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
 		{% endfor %}
