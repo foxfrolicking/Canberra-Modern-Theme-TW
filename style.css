@@ -600,10 +600,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(9 9 11 / var(--tw-bg-opacity));
 }
-.bg-cherry {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 29 82 / var(--tw-bg-opacity));
-}
 .bg-darkslate {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
