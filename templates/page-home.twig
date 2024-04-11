@@ -1,9 +1,11 @@
 {# TEMPLATE: home page #}
 
-{% extends "base.twig" %}
+{% extends "base-background.twig" %}
 
 {% block content %}
 
+		
+			
 	<div class="content-wrapper">
 		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
 			<section class="article-content">
@@ -17,7 +19,7 @@
 
 
 	<div
-		class="debug p-8 bg-debug">
+		class="debug p-8 ">
 		{# useful for debugging, delete later #}
 		<h1>Debug info</h1>
 
@@ -32,3 +34,5 @@
 
 	<!-- /content-wrapper -->
 {% endblock %}
+
+		
