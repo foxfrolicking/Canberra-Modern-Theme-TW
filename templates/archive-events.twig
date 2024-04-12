@@ -1,26 +1,42 @@
-{# This file demonstrates using most of the index.twig template and modifying
-   just a small part. See `search.twig` for an example of another approach #}
-
 {% extends "index.twig" %}
 
 {% block content %}
 
-	{% for post in posts %}
-		{# it will look for tease-events.twig, and then go to tease.twig #}
-		{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
-	{% endfor %}
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 px-4">
+    {% for post in posts %}
+    <a href="{{ post.link }}" class="max-w-sm rounded overflow-hidden shadow-lg block hover:shadow-xl transition duration-300">
+        <div class="h-full">
+            {% set image_urls = post.content|split('src="') %}
+            {% set found_image = false %}
+            {% for image_url in image_urls %}
+                {% if loop.index > 1 and not found_image %}
+                    {% set image_url = image_url|split('"')|first %}
+                    <img class="w-full h-48 object-cover mr-3.5" src="{{ image_url }}" alt="{{ post.title }}">
+                    {% set found_image = true %}
+                {% endif %}
+            {% endfor %}
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">{{ post.title }}</div>
+                <p class="text-gray-700 text-base">{{ post.description }}</p>
+            </div>
+            <div class="px-6 py-4">
+                <a href="{{ post.link }}" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{{ post.category }}</a>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
 
-	{% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
+{% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
 
-	<div
-		class="debug p-8 bg-debug">
-		{# useful for debugging, delete later #}
-		<h1>Debug info</h1>
-
-		<p>file name: archive-events.twig</p>
-
-		{# Output what is in the post #}
-		{# {{dump(post)}} #}
-	</div>
+<div class="debug p-8 bg-debug">
+    <h1>Debug info</h1>
+    <p>file name: archive-events.twig</p>
+    {# Output what is in the post #}
+    {# {{dump(post)}} #}
+</div>
 
 {% endblock %}
+
+
+
