@@ -796,6 +796,10 @@ video {
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.drop-shadow-\[0_1\.2px_1\.2px_rgba\(0\2c 0\2c 0\2c 0\.8\)\] {
+  --tw-drop-shadow: drop-shadow(0 1.2px 1.2px rgba(0,0,0,0.8));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -816,7 +820,7 @@ video {
     line-height: 2.25rem; /* 36px */
 }
 
-.wp-block-image figcaption  {
+.wp-block-image .figcaption  {
     font-size: 1.875rem; /* 30px */
     line-height: 2.25rem; /* 36px */
 }
@@ -828,8 +832,9 @@ video {
     margin-right: auto;
     
 }
+
 .hero {
-    background: url(http://canberramodernlocal/wp-content/uploads/2024/04/50795227407_a960944b6d_h-300x169.png);
+    background: url(http://canberramodernlocal/wp-content/uploads/2022/08/rsw_1160-5-1200x300-c-default.webp);
     background-repeat: no-repeat;
     background-position: 0% 0%;
     /* background-size: 100% 100%; */

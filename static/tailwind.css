@@ -20,7 +20,7 @@
     line-height: 2.25rem; /* 36px */
 }
 
-.wp-block-image figcaption  {
+.wp-block-image .figcaption  {
     font-size: 1.875rem; /* 30px */
     line-height: 2.25rem; /* 36px */
 }
@@ -32,8 +32,9 @@
     margin-right: auto;
     
 }
+
 .hero {
-    background: url(http://canberramodernlocal/wp-content/uploads/2024/04/50795227407_a960944b6d_h-300x169.png);
+    background: url(http://canberramodernlocal/wp-content/uploads/2022/08/rsw_1160-5-1200x300-c-default.webp);
     background-repeat: no-repeat;
     background-position: 0% 0%;
     /* background-size: 100% 100%; */
