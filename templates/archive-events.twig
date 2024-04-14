@@ -4,7 +4,7 @@
 
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 px-4">
     {% for post in posts %}
-    <a href="{{ post.link }}" class="max-w-sm rounded overflow-hidden shadow-lg block hover:shadow-xl transition duration-300">
+    <a href="{{ post.link }}" class="rounded overflow-hidden shadow-lg block hover:shadow-xl transition duration-300">
         <div class="h-full">
             {% set image_urls = post.content|split('src="') %}
             {% set found_image = false %}
