@@ -15,7 +15,15 @@
     font-size: 1.875rem; /* 30px */
     line-height: 2.25rem; /* 36px */
 }
+.wp-block-heading {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+}
 
+.wp-block-image figcaption  {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+}
 .wp-block-image img {
     padding-bottom: 25px;
     padding-top: 25px;
