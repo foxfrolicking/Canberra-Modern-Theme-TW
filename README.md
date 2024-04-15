@@ -4,79 +4,19 @@ The basic bones of this theme have been created by Ben Ennis Butler as a startin
 
 This version has been set up to use TailwindCSS.
 
-
-## How to use it!
-
-1. First install Wordpress with Local following the instructions on Canvas
-2. Make sure your Wordpress site is running!
-3. Pull the lastest code from GitHub, via GitHub desktop or VSCode. *Sas says - Clone to (grab link from repo, and paste into) C:\Users\saski\Local Sites\canberra-modern\app\public\wp-content\themes - NOTE change disk location to your location!) *
-4. In your terminal, navigate to the theme folder (if you've set VSCode up properly you should be in the root theme folder), then type `npm run watch`. If this doesn't work, you may need to install Node, details below. If this errors google the error to fix.
-5. Make sure you watch the [3.4 Project Setup tutorial which shows how to activate our GitHub Repo version of the Theme in WordPress local thingy](https://unicanberra.instructure.com/courses/15404/pages/3-dot-4-project-setup?module_item_id=1214627) Which means we can start editing.
-6. test this works by opening templates folder, open a twig file, e.g. footer.twig, edit > save > open local browser version and see change.
-
-
-## Install Node
-
-For Windows:
-Download Installer: [Node.js](https://nodejs.org/)
-
-Run Installer:
-Run the downloaded installer and follow the installation instructions.
-Ensure that the "npm" package manager option is selected during installation.
-
-Verify Installation:
-Open a command prompt, PowerShell or terminal in VSCode
-Run the following commands to verify the installation:
-
-`node -v`
-`npm -v`
-
-These commands should display the installed Node.js and npm versions.
-
-
-For Mac:
-Download Installer: [Node.js](https://nodejs.org/)
-
-Run Installer:
-Run the downloaded installer and follow the installation instructions.
-Ensure that the "npm" package manager option is selected during installation.
-
-Verify Installation:
-Open terminal in VSCode
-Run the following commands to verify the installation:
-
-`node -v`
-`npm -v`
-
-These commands should display the installed Node.js and npm versions.
-
-## Folder structure
-
-`assets`: This folder is often used to store CSS, JavaScript, and images related to your theme.
-
-`inc`: This folder can contain various PHP files, each handling specific functionalities. For example, custom-post-types.php might define custom post types, and theme-support.php might add theme support features.
-
-`templates`: This is where your Twig templates reside. The `partials` subfolder can contain reusable components like headers, footers, and navigation.
-
-`functions.php`: This file includes functions related to theme setup, enqueueing scripts and styles, and other theme-specific functionalities. You probably won't touch it.
-
-`style.css`: A style.css file is needed for WordPress theme identification. When using Tailwind, the styles are automatically added to this, so no need to use it.
-
-
 ## Built upon
 There are quite a few things in use in order to get this to work:
 
-#### TailwindCSS v3.4.1
+### TailwindCSS v3.4.1
 Tailwind is a utility-first CSS framework
 [Tailwind Docs](https://tailwindcss.com/docs/)
 
-#### Timber Starter Theme
+### Timber Starter Theme
 The "_s" for Timber: a dead-simple theme that you can build from. The primary purpose of this theme is to provide a file structure rather than a framework for markup or styles. [Starter Theme](https://travis-ci.com/github/timber/starter-theme)
 
-#### Twig
+### Twig
 Timber uses Twig. Twig is a flexible and secure template engine for PHP used primarily in web development to separate the logic of the application from its presentation layer.
 [Twig](https://twig.symfony.com/)
-
 
 ## Other Resources
 
@@ -84,3 +24,54 @@ Timber uses Twig. Twig is a flexible and secure template engine for PHP used pri
 * [Timber and Twig Reignited My Love for WordPress](https://css-tricks.com/timber-and-twig-reignited-my-love-for-wordpress/) on CSS-Tricks
 * [A real live Timber theme](https://github.com/laras126/yuling-theme).
 
+# Reflection Saskia 
+
+## Individual Contribution: 
+For this project, I completed and focused on the home page, galleries and other css styling issues. My direction with the home page came from the figma prototype. We aimed to have a hero image, covering the entire page and the navigation. To do this, I had to first find out what link url of the images were inside the wordpress and tailwind integration. I inspected our site and found that the images were defined by the class "wp-block-image img".
+* [Image Link](http://canberramodernlocal/wp-content/uploads/2022/08/rsw_1160-5-1200x300-c-default.webp)
+From this, I made a class within the 'tailwind.css' file called 'hero'. This was done with the help with Ben in class. From the creation of this class, I proceeded to add different css styling. I ran into my first issue with this after I realised that to apply the hero class to the entire page, I would have to apply it to base.twig. This would have been an issue as it would have applied the hero image to every page. Except this was the only way I knew to apply the class, as I had to put it in the class above the navigation and the logo, to make it cover the entire page. So after troubleshooting, I made a duplicate base.twig, naming it base-background.twig. Within base-background.twig I then edited the page-home.twig to "{% extends "base-background.twig" %}". This enabled me to use it as a separate template and the changes to not apply to the other pages. 
+
+I still encountered issues with this and found that the contrast of all the images embedded in the site did not work with our dark theme, with light text. So I used the classes "bg-black p-4 rounded-lg bg-opacity-65 md:rounded-md". This added a text box that was responsive and had opacity, to refrain from looking blocky and big. 
+
+Apart from this, I also helped with the creation of the classes in the pure css template which allowed specific decoration of headings, images, paragraphs and elements that we couldn't see in the code. For example:
+
+* .wp-block-image .figcaption  
+font-size: 1.875rem; /* 30px */
+line-height: 2.25rem; /* 36px */
+
+*  .wp-block-image img 
+ padding-bottom: 25px;
+ padding-top: 25px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto; 
+
+The text was embedded as a caption so I had to call on the image, then the class.
+
+
+
+
+## Team Collaboration: 
+For the delegation and distribution of tasks, we had to first understand that any changes multiple people were editing into the same page, would have serious merge issues. The merging of content did become a problem a few times throughout the initial build, when creating the nav and logo of the site, or when working on pages that affected multiple places. Regardless of our initial problems with the merging over overall elements, we moved on. Delegation looked like each of us separating and choosing two or three pages to work on. If we had issues on these pages or they affected others, we would communicate and then potentially swap pages or focus on one page as a group. This was always done after talking and sharing ideas so that there wasn’t overlap, but still implementing a team effort. I personally thought that there was a fair dividation of tasks between the three of us and that each of us was also doing content we were choosing, and more interested to do. Towards the end of the project we did focus on less singular work, instead discussing things as a team, then implementing and sharing photos and documentation of what the different code looked like. 
+
+## References and resources:
+
+# Reflection Forest
+
+## Individual Contribution: Document individual contributions to the project, outlining specific tasks undertaken, any relevant code examples and personal growth.
+
+## Issue Resolution: Discuss any challenges encountered during the development process and provide reflections on how these challenges were addressed. 
+
+## Team Collaboration: Reflect on the effectiveness of team collaboration, communication, and the distribution of tasks among group members.
+
+## References and resources: provide a briefly annotated list of resources that you found helpful while creating the website. 
+
+# Reflection Jonathan
+
+## Individual Contribution: Document individual contributions to the project, outlining specific tasks undertaken, any relevant code examples and personal growth.
+
+## Issue Resolution: Discuss any challenges encountered during the development process and provide reflections on how these challenges were addressed. 
+
+## Team Collaboration: Reflect on the effectiveness of team collaboration, communication, and the distribution of tasks among group members.
+
+## References and resources: provide a briefly annotated list of resources that you found helpful while creating the website. 
