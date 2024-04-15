@@ -58,25 +58,6 @@ For the delegation and distribution of tasks, we had to first understand that an
 
 # Reflection Forest
 
-## Individual Contribution: Document individual contributions to the project, outlining specific tasks undertaken, any relevant code examples and personal growth.
-
-## Issue Resolution: Discuss any challenges encountered during the development process and provide reflections on how these challenges were addressed. 
-
-## Team Collaboration: Reflect on the effectiveness of team collaboration, communication, and the distribution of tasks among group members.
-
-## References and resources: provide a briefly annotated list of resources that you found helpful while creating the website. 
-
-# Reflection Jonathan
-
-## Individual Contribution: Document individual contributions to the project, outlining specific tasks undertaken, any relevant code examples and personal growth.
-
-## Issue Resolution: Discuss any challenges encountered during the development process and provide reflections on how these challenges were addressed. 
-
-## Team Collaboration: Reflect on the effectiveness of team collaboration, communication, and the distribution of tasks among group members.
-
-## References and resources: provide a briefly annotated list of resources that you found helpful while creating the website. 
-
-
 <h1><strong>Assessment 1: Responsive Design System</strong></h1>
 <h1>Rationale Answers:</h1>
 <p> <strong>By Forest</strong> </p>
@@ -186,3 +167,14 @@ Open AI. (2024, February 14). ChatGPT; (Model 3.5). https://chat.openai.com/
 Tailwind CSS - Rapidly build modern websites without ever leaving your HTML. (2023). Tailwindcss.com; Tailwindcss. https://tailwindcss.com/ 
 <br>
 Vivian. (2022, August 29). How to do gradient text with Tailwind CSS. Design2Tailwind. https://design2tailwind.com/blog/tailwindcss-gradient-text/ </p>
+
+# Reflection Jonathan
+
+## Individual Contribution: Document individual contributions to the project, outlining specific tasks undertaken, any relevant code examples and personal growth.
+
+## Issue Resolution: Discuss any challenges encountered during the development process and provide reflections on how these challenges were addressed. 
+
+## Team Collaboration: Reflect on the effectiveness of team collaboration, communication, and the distribution of tasks among group members.
+
+## References and resources: provide a briefly annotated list of resources that you found helpful while creating the website. 
+
