@@ -573,6 +573,9 @@ video {
 .mr-4 {
   margin-right: 1rem;
 }
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
 .block {
   display: block;
 }
@@ -798,6 +801,9 @@ video {
 .pb-20 {
   padding-bottom: 5rem;
 }
+.pb-48 {
+  padding-bottom: 12rem;
+}
 .text-left {
   text-align: left;
 }
@@ -984,6 +990,16 @@ video {
   .md\:px-96 {
     padding-left: 24rem;
     padding-right: 24rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .md\:pl-10 {
