@@ -177,7 +177,7 @@ I enjoyed collaborating with other people for the initial design of the project 
 
 One of the parts I enjoyed coding the most was the buildings gallery page. I did get stressed a couple time because the div boxes for each post wouldn't work correctly, but I was able to manipulate it so it's not just aesthetically pleasing, but also interactive. I used tailwind css hover features to change the colour and text. I had struggle getting the entire div to be selectable rather than just the image or the text but I worked it out in the end and it was worth that time spent. I then used this similar principle to implement for the videos and news page for consistency. This was the example I took inspiration from:
 
-* <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">Save changes</button>
+	<button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">Save changes</button>
 
 
 
