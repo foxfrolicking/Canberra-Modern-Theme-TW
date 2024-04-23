@@ -170,11 +170,63 @@ Vivian. (2022, August 29). How to do gradient text with Tailwind CSS. Design2Tai
 
 # Reflection Jonathan
 
-## Individual Contribution: Document individual contributions to the project, outlining specific tasks undertaken, any relevant code examples and personal growth.
+## Individual Contribution:
+I was regularly involved throughout the whole project except nearing the last few days of some last minute code configurations. Knowing of my inconvenience for unavailibility during this time frame, I ensured I completed a share of work prior to this. My contributions mostly lie within the initial prototyping of the website in figma, and then coding the following pages; buildings, news and video pages, including their respective solo showcase and information pages. I was able to understand tailwind css quite quickly and was able to manipulate these pages into functional layouts. Other contributions would be just small quick edits on other pages for spacing or typographical issues. 
 
-## Issue Resolution: Discuss any challenges encountered during the development process and provide reflections on how these challenges were addressed. 
+I enjoyed collaborating with other people for the initial design of the project as it pushed me to explore unique options for a website - one of those being dark mode which is something I adapted to for contrast and text mitigation for usability. I found it fun experimenting with new colour combinations and using tailwind css to retrieve colours that have been established.
 
-## Team Collaboration: Reflect on the effectiveness of team collaboration, communication, and the distribution of tasks among group members.
+One of the parts I enjoyed coding the most was the buildings gallery page. I did get stressed a couple time because the div boxes for each post wouldn't work correctly, but I was able to manipulate it so it's not just aesthetically pleasing, but also interactive. I used tailwind css hover features to change the colour and text. I had struggle getting the entire div to be selectable rather than just the image or the text but I worked it out in the end and it was worth that time spent. I then used this similar principle to implement for the videos and news page for consistency. This was the example I took inspiration from:
+
+* <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">Save changes</button>
+
+
+
+## Issue Resolution:
+One challenges for me was initially understanding how twig and wordpress works. This was a whole new world of code for me that I couldn't understand or make sense out of. It took a few different explanations for me to finally understand the functionality, from where I was able to get on with coding the website. Saskia explained it really well and I began to understand it better and better as I started coding.
+
+Another challenge was wordpress files. Within the videos page, I had spent all day and night trying to extract the video thumbnail or mp4 file only for display in the videos gallery but it didn't end up working. I went between searching google, which is very unreliable in solving issues like this, to ChatGpt which was quite helpful but gave me a code that is broken, or that only extracts both the text and youtube video rather than just the video. I found out that this information is inside the {{post.content}} area which is affected by wordpress resources which I couldn't understand how to work and would involve a more entailed process. In the end I just expanded some padding room at the top of each post to act as if there is video thumbnail.
+
+Here is an one example of many codes ChatGpt tried to fix:
+
+	{% extends "base.twig" %}
+	{% block content %}
+		<div class="post">
+			<h1>{{ post.title }}</h1>
+			<div class="post-content">
+				{{ post.content|raw }}
+			</div>
+			{% if post.link %}
+				{% set video_url = post.link|replace({'https://www.youtube.com/watch?v=': '', 'https://youtu.be/': ''}) %}
+				<div class="video-container relative">
+					<video class="video w-full h-auto transition-transform duration-300 transform hover:scale-110" loop muted preload="auto" controls>
+						<source src="{{ 'https://www.youtube.com/watch?v=' ~ video_url }}" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			{% endif %}
+		</div>
+	{% endblock %}
+
+
+Another challenge involved how one twig file would affect multiple other twig files. I wanted to work on the partners page at a point, but couldn't seem to edit it without affecting the gallery, home, about, partners and supporters pages. I think I knew that Saskia managed to edit a home page without affecting the other files but this involved a process of creating new files and editing it there. I also realised that the content was sourced again only through {{post.content}} which I couldn't edit it specifically. Using flex and grid codes would make the page go hectic so we all had to resort to a center aligned page for every one. This is definitely not something we intended or desired, but we were unable to go further into this due to time constraints.
+
+## Team Collaboration:
+I think that our team collaboration was a little distorted but we worked around it and found a balance. To the start of the project, one of our group members had missed out on the initial research and prototyping of ideas which affected the group of having a wider perspective and higher inclusion. We reset and balanced ideas across the table, influencing the prototype in a positive direction. I know that a group member prototyped the code in Glitch for a more polished and finalised prototype before we all understood tailwind and wordpress a bit better.
+
+Next part comes down to the coding. All of us were very confused about how it all worked with twig and wordpress. One group member had to seek the support of their parent to understand and then share with the group. After we all understood, attempting to starting coding then merging on a collaborative codespace deemed difficult to manage. We ended up assigning pages or elements that we found interesting to one and working on those pages individually to avoid issues rising in our code. When we would come into class together, we'd discuss ideas from a design POV and share around issues and attempt to solve them together. 
+
+Towards the end of the project, we would communicate online and then edit the codespace at different times to not affect each other's progresss. Sometimes we found each other fixing little spacing or typography issues on each other pages near the end and committing them straight away to avoid chaotic merges and ensure updates on the git are fresh.
 
 ## References and resources: provide a briefly annotated list of resources that you found helpful while creating the website. 
+ChatGPT Open AI: For trouble shooting code and searching for solutions
+https://chat.openai.com/
+
+For translation of css into tailwind to build on the learning curve
+https://tailwindcss.com/
+
+Researching on how to make entire divs linkable when self directed coding was unsuccessful.
+https://stackoverflow.com/questions/4465923/a-href-link-for-entire-div-in-html-css
+
+
+
 
